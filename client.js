@@ -12,6 +12,7 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("connection Successful");
     conn.write("Name: MLY");
+    conn.write("Move: up"); // send the "Move: up" message to the server
   });
   return conn;
 };
